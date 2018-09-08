@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+  "name": "Better Paper",
+  "version": "0.1",
+  "description": "Improvements for Dropbox Paper.",
+  "homepage_url": "https://fabriziorinaldi.io/",
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  "author": "Fabrizio Rinaldi @linuz90",
+  "content_scripts": [
+    {
+      "matches": ["*://paper.dropbox.com/*"],
+      "css": [ "better-paper.css" ]
+    }
+  ],
+  "permissions": [
+    "tabs", "*://paper.dropbox.com/*"
+  ],
+  "browser_action": {
+    "default_icon": {
+      "16": "images/extension16.png",
+      "32": "images/extension32.png",
+      "48": "images/extension48.png",
+      "128": "images/extension128.png"
+    }
+  }
+}

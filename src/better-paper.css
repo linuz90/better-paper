@@ -1,0 +1,11 @@
+ul.listtype-task span.mention.internal .mention-person:last-child, ul.listtype-task span.mention.internal .mention-person:nth-last-child(2) {
+  opacity: 0;
+  transition: .2s opacity ease; }
+ul.listtype-task:hover span.mention.internal .mention-person:last-child, ul.listtype-task:hover span.mention.internal .mention-person:nth-last-child(2) {
+  opacity: 1; }
+
+.ace-line:before {
+  opacity: 0;
+  transition: .2s opacity ease; }
+.ace-line:hover:before {
+  opacity: 1; }

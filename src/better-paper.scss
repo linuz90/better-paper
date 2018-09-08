@@ -1,0 +1,33 @@
+// Compile this into better-paper.css
+
+// Auto-hide Task Assignee
+
+ul.listtype-task {
+  span.mention.internal .mention-person {
+    &:last-child, &:nth-last-child(2) {
+      opacity: 0;
+      transition: .2s opacity ease;
+    }
+  }
+  &:hover {
+    span.mention.internal .mention-person {
+      &:last-child, &:nth-last-child(2) {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+// Auto-hide Paragrah author
+
+.ace-line {
+  &:before { 
+    opacity: 0;
+    transition: .2s opacity ease;
+  }
+  &:hover {
+    &:before {
+      opacity: 1;
+    }
+  }
+}
